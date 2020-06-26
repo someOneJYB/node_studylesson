@@ -1,0 +1,19 @@
+### node 文件读取学习
+- r：读取
+  w：写入
+  s：同步
+  +：增加相反操作
+  x：排他方式
+r+ 和 w+ 的区别，当文件不存在时，r+ 不会创建文件，而会抛出异常，但 w+ 会创建文件；如果文件存在，r+ 不会自动清空文件，但 w+ 会自动把已有文件的内容清空。
+同步异步读取文件
+- 文件读取： readFile readFileSync
+- 文件写 writeFile writeFileSync
+- 复制文件 copyFile copyFileSync 异步拷贝写入方法 copyFile 和 copyFileSync 前两个参数相同，最后一个参数为回调函数，在拷贝完成后执行。
+- 打开文件 open
+- 关闭文件 close
+- 删除文件 unlink unlinkSync
+- 创建目录 mkdir mkdirSync
+- 删除目录 rmdir rmdirSync
+- 判断文件权限 access accessSync
+- 追加文件 appendFile appendFileSync
+- 判断文件是否存在 exists existsSync
